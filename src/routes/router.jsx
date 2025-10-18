@@ -1,9 +1,10 @@
 import { createBrowserRouter } from "react-router";
+import { HomeLayout } from "../layouts/HomeLayout";
 
-export const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
-    element: <h1>Home Layout</h1>,
+    element: <HomeLayout />,
   },
   {
     path: "/auth",
@@ -18,3 +19,4 @@ export const router = createBrowserRouter([
     element: <h1>404 Not Found</h1>,
   },
 ]);
+export default router;
